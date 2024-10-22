@@ -14,13 +14,13 @@ def topic():
     topics = [material.text for material in materials]  
     return topics
 
-# 인기 주제에 대한 타이틀 추출
+
 def search():
     titles = soup.select('span.lnk_tit')
     title_list = [title.text for title in titles]  
     return title_list
 
-# 결과 출력
+
 print(f'인기주제: {topic()}')
 print(f'인기주제 타이틀: {search()}')
 
