@@ -11,7 +11,7 @@ def main():
         print(f'news_content_url : {news_content_url}')
         
         
-        #기사 내용 가져오기
+        
         respone_content = requests.get(f'{news_content_url}')
         soup_content = BeautifulSoup(respone_content.text, 'html.parser')
         content = soup_content.select_one(f'#dic_area')
