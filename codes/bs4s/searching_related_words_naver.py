@@ -10,7 +10,7 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 
 def topic():
-    materials = soup.select('span.BqZGMHlcQKUqdI_4Wl43')
+    materials = soup.select('span.fds-comps-keyword-chip-text')
     topics = [material.text for material in materials]  
     return topics
 
