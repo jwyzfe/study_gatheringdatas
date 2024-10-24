@@ -1,3 +1,10 @@
+#저장 위치 
+#./news/
+
+#mongodb ip
+#mongodb://192.168.0.63:27017/
+
+
 import requests
 from bs4 import BeautifulSoup
 import os
