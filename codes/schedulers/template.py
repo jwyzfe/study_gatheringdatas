@@ -1,11 +1,3 @@
-# def main():
-#     return
-
-# if __name__=='main__':
-#     main()
-#     pass
-
-
 def main():
     first = 30
     second = 0
