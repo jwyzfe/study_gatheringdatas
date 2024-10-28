@@ -13,7 +13,7 @@ browser = webdriver.Chrome(service=ChromeService(webdriver_manager_directory))
 capabilities = browser.capabilities
 
 
-browser.get("https://news.naver.com/")
+browser.get("https://n.news.naver.com/mnews/article/277/0005490901")
 
 # - 가능 여부에 대한 OK 받음
 pass
