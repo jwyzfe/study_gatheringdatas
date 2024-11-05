@@ -80,3 +80,6 @@ result_insert = collection.insert_many(result)
 
 # 브라우저 닫기
 browser.quit()
+
+
+
