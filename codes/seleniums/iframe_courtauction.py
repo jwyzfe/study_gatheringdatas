@@ -17,7 +17,7 @@ def main():
 
     browser.get("https://www.courtauction.go.kr/")
     
-    # iframe 전환
+    # frame 전환
     browser.switch_to.frame("indexFrame")
     time.sleep(3)
     
@@ -31,7 +31,7 @@ def main():
     contents_list = browser.find_elements(by=By.CSS_SELECTOR, value="tr > td:nth-child(4) > div")
     price_list = browser.find_elements(by=By.CSS_SELECTOR, value = "tr > td.txtright")
     
-    # 두 리스트를 동시에 순회
+    # 두 리스트를 동시에
     for number, content, price in zip(number_list, contents_list , price_list): 
         print(f'No. : {number.text}, contents : {content.text}, price :{price.text}')
     
